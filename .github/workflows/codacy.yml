@@ -55,7 +55,7 @@ jobs:
     - name: Audit dependencies with pip-audit
       run: |
         pip install pip-audit
-        pip-audit
+        pip-audit --fix
 
     - name: Run tests with coverage
       run: |
